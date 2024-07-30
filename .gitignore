@@ -1,2 +1,10 @@
 # la palettes des couleurs 
 color-palette.scssgit 
+
+#ajoute de la structure pour faire SCSS
+*.json
+/node_modules
+public/css/style.css.map
+
+#inspiration pour creer le site
+inspiration.pur
