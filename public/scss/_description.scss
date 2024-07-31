@@ -1,0 +1,90 @@
+.comida-calle-container {
+    width: 100%;
+    display: flex;
+    background-color: var(--bittersweet);
+    padding: 17vw 6vw;
+}
+
+
+.comida-calle-child {
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 120px;
+
+    .title {
+        position: relative;
+    }
+
+    h2 {
+        position: relative;
+        width: 110vw;
+        font-size: 6rem;
+        z-index: 3;
+
+    }
+
+    .ombre-text {
+        -webkit-text-stroke:calc(20vw /var(--context)) var(--bittersweet);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    
+    }
+
+    p {
+        font-size: 3rem;
+        font-family:'Barlow Condensed', sans-serif;
+        width: 40vw;
+    }
+
+    img {
+        object-fit: cover;
+        width: 40vw;
+        height: 40vh;
+        border-radius: 20px;
+    }
+    
+}
+
+.comida-calle-child-two {
+    position: relative;
+    
+    img:nth-child(1) {
+        width: 98vw;
+        position: absolute;
+        top: -65vw;
+        left: -102vw;
+        border-radius: 20px;
+    }
+
+    img:nth-child(2) {
+        width: 25vw;
+        position: absolute;
+        top: -10vw;
+        left: -50vw;
+        border-radius: 20px;
+    }
+
+}
+
+.parrot {
+    position: relative;
+
+    img {
+        width: 41vw;
+        position: absolute;
+        top: 78vh;
+        left: -118vw;
+        transform: scaleX(-1);
+    }
+}
+
+.rum-container {
+
+    display: grid;
+}
+
+
+

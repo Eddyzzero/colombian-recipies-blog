@@ -1,3 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Jackpot";
+  src: url(../../assets/fonts/Jackpot.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Keep Cheese";
+  src: url(../../assets/fonts/Keep\ Cheese.ttf) format("ttf");
+}
+:root {
+  --context: 14.4;
+  --verdigris: #17bebbff;
+  --raisin-black: #2e282aff;
+  --kelly-green: #76b041ff;
+  --bittersweet: #eb5e55ff;
+  --orange-web: rgba(246, 170, 28, 0.541);
+}
 
+.container-nav-bar {
+  background-color: var(--orange-web);
+  width: 100%;
+  height: 100vh;
+}
+
+.backgroun-clip {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backgroun-clip {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .backgroun-clip {
+    width: auto;
+    height: 100%;
+  }
+}
+header a {
+  display: flex;
+  justify-content: flex-end;
+}
+header a img {
+  width: 20rem;
+}
+
+nav ul {
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  font-size: 7rem;
+  font-family: "Jackpot", sans-serif;
+}
+nav ul a {
+  text-decoration: none;
+  color: var(--raisin-black);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+nav ul a:hover {
+  color: var(--kelly-green);
+}
+
+.comida-calle-container {
+  width: 100%;
+  display: flex;
+  background-color: var(--bittersweet);
+  padding: 17vw 6vw;
+}
+
+.comida-calle-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+}
+.comida-calle-child .title {
+  position: relative;
+}
+.comida-calle-child h2 {
+  position: relative;
+  width: 110vw;
+  font-size: 6rem;
+  z-index: 3;
+}
+.comida-calle-child .ombre-text {
+  -webkit-text-stroke: calc(20vw / var(--context)) var(--bittersweet);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.comida-calle-child p {
+  font-size: 3rem;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 40vw;
+}
+.comida-calle-child img {
+  object-fit: cover;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 20px;
+}
+
+.comida-calle-child-two {
+  position: relative;
+}
+.comida-calle-child-two img:nth-child(1) {
+  width: 98vw;
+  position: absolute;
+  top: -65vw;
+  left: -102vw;
+  border-radius: 20px;
+}
+.comida-calle-child-two img:nth-child(2) {
+  width: 25vw;
+  position: absolute;
+  top: -10vw;
+  left: -50vw;
+  border-radius: 20px;
+}
+
+.parrot {
+  position: relative;
+}
+.parrot img {
+  width: 41vw;
+  position: absolute;
+  top: 78vh;
+  left: -118vw;
+  transform: scaleX(-1);
+}
+
+.rum-container {
+  display: grid;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: var(--raisin-black);
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h2 {
+  font-family: "jackpot", sans-serif;
+  font-size: 4rem;
+  color: var(--raisin-black);
+}
 
 /*# sourceMappingURL=style.css.map */
