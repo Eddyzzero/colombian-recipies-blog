@@ -1,0 +1,236 @@
+
+.fruits-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #76B041;
+    gap: 5rem;
+    padding: 10vh 7vh;
+
+    p {
+        margin-top: 2rem;
+        text-align: center;
+        font-family: "Keep Cheese";
+        font-size: 1.5rem;
+    }
+}
+
+.fruits-items {
+    display: grid;
+    grid-template-areas: 
+    "tomatoes sapote papaya guanavana"
+    "guanavana  watermelon watermelon freijoa"
+    "dragon pepino mamoncillo cape";
+    z-index: 3;
+    margin: 0;
+    gap: 5rem 0;
+
+    p {
+        color: bisque;
+    }
+}
+
+.tomatoes {
+    grid-area: tomatoes;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+.sapote {
+    grid-area: sapote;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+.papaya {
+    grid-area: papaya;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+.guanavana {
+    grid-area: guanavana;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+.banana {
+    grid-area: bananapassion;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+}
+.watermelon {
+    width: 20%;
+    grid-area: watermelon;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
+.freijoa {
+    grid-area: freijoa;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+
+.dragon {
+    grid-area: dragon;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+
+.pepino {
+    grid-area: pepino;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+
+.mamoncillo {
+    grid-area: mamoncillo;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
+
+.cape {
+    grid-area: cape;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+
+    img {
+        width: 80%;
+    }
+
+    svg {
+        opacity: 0.5;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+}

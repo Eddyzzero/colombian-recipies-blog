@@ -1,0 +1,19 @@
+.announce-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    background-color: var(--orange-web);
+
+
+    img {
+        width: 80px;
+        transform: rotate(90deg);
+    }
+
+    p {
+        font-family: 'Keep Cheese', sans-serif;
+        font-size: 2rem;
+        color: var(--raisin-black);
+    }
+}

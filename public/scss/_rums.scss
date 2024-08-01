@@ -1,0 +1,115 @@
+
+.rum-container {
+
+    position: relative;
+
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "item2 item3 item4 item5";
+    place-content: center;
+    gap: 15vh 0;
+    padding: 10vh 7vh;
+    background-color: var(--orange-web);
+}
+
+.item1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+
+    p {
+        margin-top: 2rem;
+        text-align: center;
+        font-family: 'Keep Cheese';
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
+}
+
+.item2 {
+    grid-area: item2;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.item3 {
+    grid-area: item3;
+    
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20em;
+
+    h3 {
+        margin-top: 2rem;
+    }
+
+    img {
+        transform: rotate(-10deg);
+    }
+}
+
+.item4 {
+    grid-area: item4;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    h3:nth-of-type(1) {
+        margin-top: 3rem;
+    }
+
+    img {
+        transform: rotate(10deg);
+    }
+}
+
+.item5 {
+    grid-area: item5;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.background-rum-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-rum-item {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-rum-item {
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+

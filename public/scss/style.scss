@@ -21,12 +21,17 @@
 	--raisin-black: #2e282aff;
 	--kelly-green: #76b041ff;
 	--bittersweet: #eb5e55ff;
-	--orange-web: rgba(246, 170, 28, 0.541);
+	--orange-web: rgba(246, 170, 28, 0.8);
 }
 
 // importation des fichiers SCSS
 @import '_menu.scss';
-@import 'description.scss';
+@import '_description.scss';
+@import '_rums.scss';
+@import '_fruits.scss';
+@import '_transit-line.scss';
+@import '_recipies.scss';
+
 
 
 // reset css
@@ -78,4 +83,37 @@ h2 {
 	font-family: 'jackpot', sans-serif;
 	font-size: 4rem;
 	color: var(--raisin-black);
+}
+
+h3 {
+	font-family: 'Keep Cheese', sans-serif;
+	font-size: 2rem;
+	color: var(--raisin-black);
+}
+
+// buttons 
+button {
+	text-decoration: none;
+	background-color: var(--verdigris);
+	color: white;
+	text-transform: uppercase;
+	border: none;
+	padding: 10px 30px;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gap {
+	gap: 0 20rem ;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

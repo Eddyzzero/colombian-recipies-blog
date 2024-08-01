@@ -13,7 +13,7 @@
   --raisin-black: #2e282aff;
   --kelly-green: #76b041ff;
   --bittersweet: #eb5e55ff;
-  --orange-web: rgba(246, 170, 28, 0.541);
+  --orange-web: rgba(246, 170, 28, 0.8);
 }
 
 .container-nav-bar {
@@ -132,13 +132,341 @@ nav ul a:hover {
 .parrot img {
   width: 41vw;
   position: absolute;
-  top: 78vh;
+  top: 68vh;
   left: -118vw;
   transform: scaleX(-1);
 }
 
 .rum-container {
+  position: relative;
   display: grid;
+  grid-template-areas: "header header header header" "item2 item3 item4 item5";
+  place-content: center;
+  gap: 15vh 0;
+  padding: 10vh 7vh;
+  background-color: var(--orange-web);
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+}
+.item1 p {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Keep Cheese";
+  font-size: 1.5rem;
+}
+.item1 button {
+  margin-top: 2rem;
+}
+
+.item2 {
+  grid-area: item2;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.item3 {
+  grid-area: item3;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20em;
+}
+.item3 h3 {
+  margin-top: 2rem;
+}
+.item3 img {
+  transform: rotate(-10deg);
+}
+
+.item4 {
+  grid-area: item4;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.item4 h3:nth-of-type(1) {
+  margin-top: 3rem;
+}
+.item4 img {
+  transform: rotate(10deg);
+}
+
+.item5 {
+  grid-area: item5;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.background-rum-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-rum-item {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .background-rum-item {
+    width: auto;
+    height: 100%;
+  }
+}
+.fruits-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #76B041;
+  gap: 5rem;
+  padding: 10vh 7vh;
+}
+.fruits-container p {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Keep Cheese";
+  font-size: 1.5rem;
+}
+
+.fruits-items {
+  display: grid;
+  grid-template-areas: "tomatoes sapote papaya guanavana" "guanavana  watermelon watermelon freijoa" "dragon pepino mamoncillo cape";
+  z-index: 3;
+  margin: 0;
+  gap: 5rem 0;
+}
+.fruits-items p {
+  color: bisque;
+}
+
+.tomatoes {
+  grid-area: tomatoes;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.tomatoes img {
+  width: 80%;
+}
+.tomatoes svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.sapote {
+  grid-area: sapote;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.sapote img {
+  width: 80%;
+}
+.sapote svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.papaya {
+  grid-area: papaya;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.papaya img {
+  width: 80%;
+}
+.papaya svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.guanavana {
+  grid-area: guanavana;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.guanavana img {
+  width: 80%;
+}
+.guanavana svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.banana {
+  grid-area: bananapassion;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.banana img {
+  width: 80%;
+}
+.banana svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.watermelon {
+  width: 20%;
+  grid-area: watermelon;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+
+.freijoa {
+  grid-area: freijoa;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.freijoa img {
+  width: 80%;
+}
+.freijoa svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.dragon {
+  grid-area: dragon;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.dragon img {
+  width: 80%;
+}
+.dragon svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.pepino {
+  grid-area: pepino;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.pepino img {
+  width: 80%;
+}
+.pepino svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.mamoncillo {
+  grid-area: mamoncillo;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.mamoncillo img {
+  width: 80%;
+}
+.mamoncillo svg {
+  opacity: 0.5;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.cape {
+  grid-area: cape;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.cape img {
+  width: 80%;
+}
+.cape svg {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.announce-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  background-color: var(--orange-web);
+}
+.announce-line img {
+  width: 80px;
+  transform: rotate(90deg);
+}
+.announce-line p {
+  font-family: "Keep Cheese", sans-serif;
+  font-size: 2rem;
+  color: var(--raisin-black);
+}
+
+.recipies-container {
+  background-color: var(--bittersweet);
+}
+.recipies-container img {
+  width: 100px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -196,6 +524,38 @@ h2 {
   font-family: "jackpot", sans-serif;
   font-size: 4rem;
   color: var(--raisin-black);
+}
+
+h3 {
+  font-family: "Keep Cheese", sans-serif;
+  font-size: 2rem;
+  color: var(--raisin-black);
+}
+
+button {
+  text-decoration: none;
+  background-color: var(--verdigris);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap {
+  gap: 0 20rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

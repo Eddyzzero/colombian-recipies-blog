@@ -50,25 +50,27 @@
 
     <!-- section rums -->
     <article class="rum-container">
-        <section class="title-rums">
+        <img class="background-rum-item" src="./assets/images/jpg/cocktails.jpg" alt="">
+        <section class="item1">
             <h2>Colombian rum </h2>
             <p>the only drink that makes you travel without leaving your sofa.</p>
+            <button><a href="./rums.html"></a>Fruits</button>
         </section>
-        <section>
+        <section class="item2">
             <h3>Rum viejo de caldas</h3>
             <h3>tradicional</h3>
             <img src="./assets/images/png/ron premio tradicional.png" alt="">
         </section>
-        <section>
-            <h3>Rum parce</h3>
+        <section class="item3">
             <img src="./assets/images/png/RON-PARCE-12-ANOS-X-750-ML.png" alt="">
+            <h3>Rum parce</h3>
         </section>
-        <section>
+        <section class="item4">
+            <img src="./assets/images/png/rum 15years.png" alt="">
             <h3>Rum viejo de caldas</h3>
             <h3>15 years old</h3>
-            <img src="./assets/images/png/rum 15years.png" alt="">
         </section>
-        <section>
+        <section class="item5">
             <h3>Rum viejo de caldas</h3>
             <h3>Gran reserva especial</h3>
             <img src="./assets/images/png/ron gran reserva.png" alt="">
@@ -76,65 +78,109 @@
     </article>
 
     <!-- fruits section -->
-    <article>
-        <section>
-            <h3>our fruits</h3>
+    <article class="fruits-container">
+        <section class="flex-col">
+            <h2>our fruits</h2>
             <p> Colombian fruit are so colorful, it's like a carnival in your kitchen.</p>
-            <button><a href="./fruits.html"></a>Fruits</button>
+            <a href="./fruits.html"><button>Fruits</button></a>
         </section>
-        <section>
-            <div>
-                <img src="./assets/images/png/three tomates.png" alt="">
-                <p>three tomato</p>
-            </div>
-            <div>
-                <img src="./assets/images/png/sapote.png" alt="">
-                <p>Sapote</p>
-            </div>
-            <div>
-                <img src="./assets/images/png/papaya.png" alt="">
-                <p>papaya</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="./assets/images/png/guanavana.png" alt="">
-                <p>guanavana</p>
-            </div>
-            <img src="./assets/images/png/watermelon.png" alt="">
-            <div>
-                <img src="./assets/images/png/feijoa-large-removebg-preview.png" alt="">
-                <p>Freijoa</p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="./assets/images/png/pitaya-large-removebg-preview.png" alt="">
-                <p>Dragon fruit</p>
-            </div>
-            <div>
-                <img src="./assets/images/png/pepino melon.png" alt="">
-                <p>Pepino melon</p>
-            </div>            <div>
-                <img src="./assets/images/png/mamoncillo-1.png" alt="">
-                <p>Mamoncillo</p>
-            </div>
-            <div>
-                <img src="./assets/images/png/ochua.png" alt="">
-                <p>cape gooseberry</p>
-            </div>
-        </section>
+        <div class="fruits-items">
+            <section class="flex-row">
+                <div class="tomatoes flex-col">
+                    <img src="./assets/images/png/three tomates.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M43.5,-46.8C58.9,-38.8,75.9,-27.6,78.1,-14C80.3,-0.3,67.7,15.8,57.7,33.4C47.6,51.1,40.2,70.4,27.1,75.7C14.1,80.9,-4.4,72,-23.4,64.9C-42.4,57.7,-61.9,52.3,-67.8,40.1C-73.7,27.9,-66,8.8,-61.6,-9.9C-57.2,-28.6,-56,-47,-46.3,-56C-36.5,-65,-18.3,-64.7,-2.1,-62.2C14,-59.6,28,-54.8,43.5,-46.8Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>three tomato</p>
+                </div>
+                <div class="sapote flex-col">
+                    <img src="./assets/images/png/sapote.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M37.9,-64.1C47.8,-59.8,53.9,-47.2,62.7,-35.1C71.5,-23.1,83,-11.5,81.2,-1.1C79.4,9.4,64.2,18.9,52.5,26C40.9,33,32.7,37.8,24.5,40.1C16.4,42.5,8.2,42.5,-1.2,44.6C-10.6,46.8,-21.3,51,-29.6,48.7C-37.8,46.4,-43.7,37.5,-50.5,28.3C-57.3,19.1,-65,9.5,-70,-2.9C-75.1,-15.4,-77.6,-30.8,-69.2,-37.2C-60.8,-43.6,-41.5,-41.1,-28.2,-43.4C-14.8,-45.8,-7.4,-53.1,3.3,-58.7C13.9,-64.3,27.9,-68.4,37.9,-64.1Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Sapote</p>
+                </div>
+                <div class="papaya flex-col">
+                    <img src="./assets/images/png/papaya.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M44.6,-72.6C58,-69.5,69.3,-58,72.7,-44.5C76.2,-31,71.8,-15.5,72.5,0.4C73.1,16.3,78.8,32.5,74.6,44.7C70.4,56.9,56.3,64.9,42.2,67.5C28.1,70,14.1,67,1.4,64.5C-11.2,62,-22.4,60.1,-36.1,57.4C-49.9,54.6,-66.1,51.1,-73.9,41.4C-81.6,31.7,-80.8,15.9,-78.7,1.3C-76.5,-13.3,-72.9,-26.7,-67.3,-40.2C-61.8,-53.7,-54.3,-67.3,-42.7,-71.5C-31.2,-75.7,-15.6,-70.4,0,-70.4C15.6,-70.4,31.2,-75.7,44.6,-72.6Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>papaya</p>
+                </div>
+                <div class="guanavana flex-col">
+                    <img src="./assets/images/png/guanavana.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M43.6,-75.3C54.2,-69.3,59,-53.1,64.2,-38.8C69.4,-24.6,75,-12.3,76.6,0.9C78.2,14.1,75.8,28.3,67.7,37.5C59.7,46.8,45.8,51.1,33.6,57.5C21.3,64,10.7,72.5,-2.7,77.2C-16,81.8,-32,82.5,-42.2,74.9C-52.4,67.2,-56.8,51.3,-62.6,37.4C-68.5,23.5,-75.8,11.8,-78.8,-1.8C-81.9,-15.3,-80.6,-30.5,-74,-43.2C-67.5,-55.8,-55.6,-65.7,-42.4,-70.3C-29.1,-74.8,-14.6,-73.9,0.9,-75.5C16.5,-77.1,32.9,-81.3,43.6,-75.3Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>guanavana</p>
+                </div>
+            </section>
+            <section class="flex-row gap ">
+                <div class="banana flex-col">
+                    <img src="./assets/images/png/bananapassionfruit seed.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M40.9,-55.4C54.1,-55,66.8,-45.7,70.8,-33.4C74.8,-21.1,70.1,-5.8,67.7,9.6C65.3,25.1,65.2,40.7,58.4,53.2C51.6,65.7,38.2,74.9,23.2,79.6C8.2,84.3,-8.3,84.4,-18.7,75.8C-29.1,67.2,-33.3,49.9,-39.4,37.3C-45.4,24.6,-53.1,16.7,-60.6,5C-68.2,-6.8,-75.5,-22.3,-73.1,-35.9C-70.8,-49.4,-58.7,-61,-44.9,-61.1C-31.1,-61.2,-15.5,-49.8,-0.9,-48.5C13.8,-47.1,27.6,-55.8,40.9,-55.4Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Banana passion fruit seed</p>
+                </div>
+                <img class="watermelon" src="./assets/images/png/watermelon.png" alt="">
+                <div class="freijoa flex-col">
+                    <img class="freijoa" src="./assets/images/png/feijoa-large-removebg-preview.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M42.5,-72.9C55.7,-66,67.4,-55.8,71.8,-43.1C76.2,-30.5,73.2,-15.2,70.9,-1.3C68.5,12.5,66.8,25.1,63,38.8C59.3,52.5,53.4,67.4,42.6,74.9C31.7,82.4,15.8,82.4,1.5,79.9C-12.9,77.3,-25.8,72.2,-39.8,66.6C-53.8,60.9,-68.9,54.7,-74.1,43.5C-79.3,32.3,-74.7,16.2,-75,-0.2C-75.2,-16.5,-80.4,-32.9,-75.8,-45.2C-71.2,-57.5,-56.9,-65.7,-42.7,-72C-28.4,-78.3,-14.2,-82.7,0.2,-83.1C14.7,-83.5,29.3,-79.8,42.5,-72.9Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Freijoa</p>
+                </div>
+            </section>
+            <section class="flex-row">
+                <div class="dragon flex-col">
+                    <img src="./assets/images/png/pitaya-large-removebg-preview.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M53.7,-65.6C65,-54.6,66.4,-33.3,67.7,-13.7C69.1,5.8,70.4,23.6,63.8,38.6C57.3,53.6,42.9,65.9,26.3,71.8C9.6,77.7,-9.1,77.2,-24.3,70.2C-39.4,63.2,-50.9,49.6,-61.9,34C-72.9,18.5,-83.4,1,-79.8,-13.2C-76.3,-27.4,-58.8,-38.4,-43.2,-48.6C-27.6,-58.9,-13.8,-68.5,3.7,-73C21.2,-77.4,42.5,-76.7,53.7,-65.6Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Dragon fruit</p>
+                </div>
+                <div class="pepino flex-col">
+                    <img src="./assets/images/png/pepino melon.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M25.6,-37.9C31,-31.4,31.6,-20.9,41.1,-9.2C50.6,2.5,69,15.4,72,28.7C75,41.9,62.6,55.5,48,63.6C33.5,71.8,16.7,74.5,1.5,72.4C-13.7,70.4,-27.5,63.6,-42.1,55.4C-56.7,47.3,-72.3,37.9,-76.9,24.8C-81.5,11.6,-75.1,-5.4,-67,-19.2C-59,-33,-49.2,-43.7,-37.8,-48.2C-26.3,-52.8,-13.2,-51.2,-1.5,-49.1C10.1,-47.1,20.3,-44.4,25.6,-37.9Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Pepino melon</p>
+                </div>
+                <div class="mamoncillo flex-col">
+                    <img src="./assets/images/png/mamoncillo-1.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M39.9,-51.5C49,-48.3,51.7,-33,59.6,-17.3C67.5,-1.7,80.6,14.4,74.4,21.3C68.2,28.2,42.7,26,27.1,36.4C11.6,46.7,5.8,69.5,-6.6,78.6C-19,87.7,-38,83,-48.3,71C-58.6,59,-60.2,39.5,-64.7,21.9C-69.2,4.3,-76.4,-11.4,-70.5,-20.8C-64.5,-30.1,-45.3,-33,-31.4,-34.7C-17.4,-36.3,-8.7,-36.6,3.4,-41.2C15.4,-45.8,30.8,-54.7,39.9,-51.5Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>Mamoncillo</p>
+                </div>
+                <div class="cape flex-col">
+                    <img src="./assets/images/png/ochua.png" alt="">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#61982F" d="M42.6,-57.9C55.8,-49,67.5,-37.4,65.8,-25.4C64.2,-13.4,49.2,-1.2,44.8,15.2C40.4,31.7,46.6,52.2,40.9,61.4C35.2,70.5,17.6,68.4,4.9,61.7C-7.9,55,-15.7,43.7,-29.5,37.2C-43.3,30.6,-63.1,28.8,-71.7,19.3C-80.2,9.8,-77.5,-7.2,-70.8,-21.5C-64.1,-35.8,-53.4,-47.2,-40.9,-56.4C-28.4,-65.5,-14.2,-72.3,0.2,-72.6C14.7,-72.9,29.4,-66.8,42.6,-57.9Z" transform="translate(100 100)" />
+                    </svg>
+                    <p>cape gooseberry</p>
+                </div>
+            </section>
+        </div>
     </article>
 
     <!-- section defilante vers la gauche -->
-     <article>
+     <article class="announce-line">
         <img src="./assets/images/png/coffe-beans.png" alt="">
         <p>Parce visite colombia</p>
+        <img src="./assets/images/png/coffe-beans.png" alt="">
+        <p>Parce visite colombia</p>
+        <img src="./assets/images/png/coffe-beans.png" alt="">
+        <p>Parce visite colombia</p>
+        <img src="./assets/images/png/coffe-beans.png" alt="">
+        <p>Parce visite colombia</p>
+        
      </article>
 
      <!-- section recettes -->
-      <article>
-        <section>
+      <article class="recipies-container">
+        <section >
             <h3>Recipies</h3>
             <p>Colombian dishes are like a tasty parachute jump. Strong sensations guaranteed!</p>
             <button><a href="./recipes.html"></a>all recipies</button>
