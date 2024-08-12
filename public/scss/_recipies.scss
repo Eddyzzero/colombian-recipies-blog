@@ -1,8 +1,122 @@
 .recipies-container {
     background-color: var(--bittersweet);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 8rem;
 
     img {
-        width: 100px;
+        width: 500px;
     }
+
+    .recipes-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-self: flex-start;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10rem;
+
+        p {
+        width: 40rem;
+        font-family: "Keep Cheese";
+        font-size: 2rem;
+        }
+
+        button {
+            margin-left: 40rem;
+        }
+    }
+
+    .text-bas {
+        width: 40rem;
+        align-self: flex-end;
+        font-family: "Keep Cheese";
+        font-size: 2rem;
+    }
+}
+
+.container-images {
+
+    display: grid;
+    gap: 2rem;
+
+
+    .items {
+        display: flex;
+        gap: 2rem;
+
+        img {
+
+            object-fit: cover;
+
+            &:nth-child(1) {
+                width: 30%;
+                height: 20rem;
+                border-radius: 20px;
+                margin-top: 10rem;
+            }
+
+            &:nth-child(2) {
+                width: 40%;
+                height: 30rem;
+                border-radius: 20px;
+            }
+
+            &:nth-child(3) {
+                width: 20%;
+                height: 20rem;
+                border-radius: 20px;
+                margin-top: 10rem;
+            }
+
+            &:nth-child(4) {
+                width: 20%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .items-2 {
+        display: flex;
+        gap: 2rem;
+
+        img {
+            object-fit: cover;
+
+            &:nth-child(1) {
+                width: 25%;
+                height: 26rem;
+                border-radius: 20px;
+            }
+
+            &:nth-child(2) {
+                width: 25%;
+                height: 40rem;
+                border-radius: 20px;
+            }
+
+            &:nth-child(3) {
+                width: 25%;
+                height: 40rem;
+                border-radius: 20px;
+            }
+
+            &:nth-child(3) {
+                width: 30%;
+                height: 30rem;
+                border-radius: 20px;
+            }
+
+            &:nth-child(4) {
+                width: 60%;
+                height: 30rem;
+                border-radius: 20px;
+            }
+
+        }
+    }
+
 }

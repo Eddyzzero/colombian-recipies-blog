@@ -20,6 +20,7 @@
 	--verdigris: #17bebbff;
 	--raisin-black: #2e282aff;
 	--kelly-green: #76b041ff;
+	--soft-black: #1D1C1C;
 	--bittersweet: #eb5e55ff;
 	--orange-web: rgba(246, 170, 28, 0.8);
 }
@@ -31,6 +32,7 @@
 @import '_fruits.scss';
 @import '_transit-line.scss';
 @import '_recipies.scss';
+@import '_footer.scss';
 
 
 
@@ -62,7 +64,12 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
+html {
+	scroll-behavior: smooth;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -99,6 +106,8 @@ button {
 	text-transform: uppercase;
 	border: none;
 	padding: 10px 30px;
+	cursor: pointer;
+    font-family: 'Keep Cheese';
 }
 
 .flex-row {

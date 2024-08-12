@@ -12,6 +12,7 @@
   --verdigris: #17bebbff;
   --raisin-black: #2e282aff;
   --kelly-green: #76b041ff;
+  --soft-black: #1D1C1C;
   --bittersweet: #eb5e55ff;
   --orange-web: rgba(246, 170, 28, 0.8);
 }
@@ -112,10 +113,10 @@ nav ul a:hover {
   position: relative;
 }
 .comida-calle-child-two img:nth-child(1) {
-  width: 98vw;
+  width: 77vw;
   position: absolute;
-  top: -65vw;
-  left: -102vw;
+  top: -53vw;
+  left: -92vw;
   border-radius: 20px;
 }
 .comida-calle-child-two img:nth-child(2) {
@@ -236,8 +237,15 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   background-color: #76B041;
+  -webkit-mask: url(../../assets/images/jpg/bg-content-vector.svg);
+  mask-image: url(../../assets/images/jpg/bg-content-vector.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
   gap: 5rem;
-  padding: 10vh 7vh;
+  padding: 30vh 7vh;
+  margin-top: -300px;
 }
 .fruits-container p {
   margin-top: 2rem;
@@ -464,9 +472,148 @@ nav ul a:hover {
 
 .recipies-container {
   background-color: var(--bittersweet);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 8rem;
 }
 .recipies-container img {
-  width: 100px;
+  width: 500px;
+}
+.recipies-container .recipes-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.recipies-container .recipes-text p {
+  width: 40rem;
+  font-family: "Keep Cheese";
+  font-size: 2rem;
+}
+.recipies-container .recipes-text button {
+  margin-left: 40rem;
+}
+.recipies-container .text-bas {
+  width: 40rem;
+  align-self: flex-end;
+  font-family: "Keep Cheese";
+  font-size: 2rem;
+}
+
+.container-images {
+  display: grid;
+  gap: 2rem;
+}
+.container-images .items {
+  display: flex;
+  gap: 2rem;
+}
+.container-images .items img {
+  object-fit: cover;
+}
+.container-images .items img:nth-child(1) {
+  width: 30%;
+  height: 20rem;
+  border-radius: 20px;
+  margin-top: 10rem;
+}
+.container-images .items img:nth-child(2) {
+  width: 40%;
+  height: 30rem;
+  border-radius: 20px;
+}
+.container-images .items img:nth-child(3) {
+  width: 20%;
+  height: 20rem;
+  border-radius: 20px;
+  margin-top: 10rem;
+}
+.container-images .items img:nth-child(4) {
+  width: 20%;
+  border-radius: 20px;
+}
+.container-images .items-2 {
+  display: flex;
+  gap: 2rem;
+}
+.container-images .items-2 img {
+  object-fit: cover;
+}
+.container-images .items-2 img:nth-child(1) {
+  width: 25%;
+  height: 26rem;
+  border-radius: 20px;
+}
+.container-images .items-2 img:nth-child(2) {
+  width: 25%;
+  height: 40rem;
+  border-radius: 20px;
+}
+.container-images .items-2 img:nth-child(3) {
+  width: 25%;
+  height: 40rem;
+  border-radius: 20px;
+}
+.container-images .items-2 img:nth-child(3) {
+  width: 30%;
+  height: 30rem;
+  border-radius: 20px;
+}
+.container-images .items-2 img:nth-child(4) {
+  width: 60%;
+  height: 30rem;
+  border-radius: 20px;
+}
+
+footer {
+  color: white;
+}
+footer img {
+  width: 15rem;
+}
+footer .items-footer {
+  background-color: var(--raisin-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 2rem;
+  -webkit-mask: url(../../assets/images/jpg/bg-content-vector.svg);
+  mask-image: url(../../assets/images/jpg/bg-content-vector.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  margin-top: -150px;
+}
+footer .items-footer .container-text-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+footer .items-footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+footer .copyrights {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-black);
+  font-family: "Keep Cheese";
+}
+footer .copyrights p {
+  color: rgba(255, 255, 255, 0.408);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -499,6 +646,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ol, ul {
@@ -539,6 +691,8 @@ button {
   text-transform: uppercase;
   border: none;
   padding: 10px 30px;
+  cursor: pointer;
+  font-family: "Keep Cheese";
 }
 
 .flex-row {

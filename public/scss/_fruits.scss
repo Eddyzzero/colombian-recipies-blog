@@ -5,8 +5,15 @@
     justify-content: center;
     align-items: center;
     background-color: #76B041;
+    -webkit-mask: url(../../assets/images/jpg/bg-content-vector.svg);
+    mask-image: url(../../assets/images/jpg/bg-content-vector.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size: cover;
     gap: 5rem;
-    padding: 10vh 7vh;
+    padding: 30vh 7vh;
+    margin-top: -300px;
 
     p {
         margin-top: 2rem;
