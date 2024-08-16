@@ -1,0 +1,145 @@
+.body-recipes {
+    background-color: var(--bittersweet);
+}
+
+.nav-bar-recipes {
+
+    ul  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            align-self: flex-end;
+            background-color: black;
+            width: 2px;
+            height: 2rem;
+        }
+
+        a {
+            font-size: calc(0.1vw + 2vh + 1vmin );
+        }
+    }
+}
+
+.container-recipes {
+    margin-top: 10rem;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 4em 0;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 40em);
+    grid-template-rows: repeat(2, 40em);
+    gap: 2rem;
+    padding: 2em 6rem 0 20rem;
+
+    .image-png {
+        width: 100%;
+        height: 100%;
+        background-color: var(--kelly-green);
+        border-radius: 12px;
+        gap: 50px;
+
+        img {
+            width: 70%;
+            height: 50%;
+            padding: 20px 10px;
+        }
+
+        h3 {
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .text-container{
+        gap: 50px;
+
+        h3{
+            text-align: center;
+            color: aliceblue;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 2rem);
+            text-align: center;
+            font-family: 'Keep Cheese';
+
+        }
+    }
+
+    
+
+}
+
+.grid-container-right {
+    display: grid;
+    grid-template-columns: repeat(2, 40em);
+    grid-template-rows: repeat(2, 40em);
+    justify-content: right;
+    gap: 2rem;
+    padding: 2rem 20rem 0 6rem;
+    margin-left: auto;
+
+    .image-png {
+        width: 100%;
+        height: 100%;
+
+        background-color: var(--kelly-green);
+        border-radius: 12px;
+        gap: 50px;
+
+        img {
+            width: 50%;
+            height: 35%;
+            padding: 20px 10px;
+        }
+
+        h3 {
+            color: aliceblue;
+            margin-bottom: 20px;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .text-container{
+        gap: 50px;
+
+        h3{
+            text-align: center;
+            color: aliceblue;
+        }
+
+        p {
+            font-size: clamp(1rem, 2.5vw, 2rem);
+            text-align: center;
+            font-family: 'Keep Cheese';
+
+        }
+    }
+}
+
+.margin-button {
+    margin-bottom: 15em;
+}
+

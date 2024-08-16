@@ -34,6 +34,9 @@
 @import '_recipies.scss';
 @import '_footer.scss';
 
+// recipes page import 
+@import '_recipes-page.scss';
+
 
 
 // reset css
@@ -94,7 +97,7 @@ h2 {
 
 h3 {
 	font-family: 'Keep Cheese', sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
 	color: var(--raisin-black);
 }
 
@@ -125,4 +128,9 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.grid {
+	display: grid;
+	
 }

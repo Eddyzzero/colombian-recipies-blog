@@ -595,6 +595,7 @@ footer .items-footer .container-text-items {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding-right: 5rem;
 }
 footer .items-footer a {
   color: white;
@@ -614,6 +615,125 @@ footer .copyrights {
 }
 footer .copyrights p {
   color: rgba(255, 255, 255, 0.408);
+}
+
+.body-recipes {
+  background-color: var(--bittersweet);
+}
+
+.nav-bar-recipes ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-recipes ul div {
+  align-self: flex-end;
+  background-color: black;
+  width: 2px;
+  height: 2rem;
+}
+.nav-bar-recipes ul a {
+  font-size: calc(0.1vw + 2vh + 1vmin);
+}
+
+.container-recipes {
+  margin-top: 10rem;
+}
+.container-recipes h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4em 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 40em);
+  grid-template-rows: repeat(2, 40em);
+  gap: 2rem;
+  padding: 2em 6rem 0 20rem;
+}
+.grid-container .image-png {
+  width: 100%;
+  height: 100%;
+  background-color: var(--kelly-green);
+  border-radius: 12px;
+  gap: 50px;
+}
+.grid-container .image-png img {
+  width: 70%;
+  height: 50%;
+  padding: 20px 10px;
+}
+.grid-container .image-png h3 {
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.grid-container .text-container {
+  gap: 50px;
+}
+.grid-container .text-container h3 {
+  text-align: center;
+  color: aliceblue;
+}
+.grid-container .text-container p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  text-align: center;
+  font-family: "Keep Cheese";
+}
+
+.grid-container-right {
+  display: grid;
+  grid-template-columns: repeat(2, 40em);
+  grid-template-rows: repeat(2, 40em);
+  justify-content: right;
+  gap: 2rem;
+  padding: 2rem 20rem 0 6rem;
+  margin-left: auto;
+}
+.grid-container-right .image-png {
+  width: 100%;
+  height: 100%;
+  background-color: var(--kelly-green);
+  border-radius: 12px;
+  gap: 50px;
+}
+.grid-container-right .image-png img {
+  width: 50%;
+  height: 35%;
+  padding: 20px 10px;
+}
+.grid-container-right .image-png h3 {
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.grid-container-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.grid-container-right .text-container {
+  gap: 50px;
+}
+.grid-container-right .text-container h3 {
+  text-align: center;
+  color: aliceblue;
+}
+.grid-container-right .text-container p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  text-align: center;
+  font-family: "Keep Cheese";
+}
+
+.margin-button {
+  margin-bottom: 15em;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -680,7 +800,7 @@ h2 {
 
 h3 {
   font-family: "Keep Cheese", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--raisin-black);
 }
 
@@ -710,6 +830,10 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.grid {
+  display: grid;
 }
 
 /*# sourceMappingURL=style.css.map */
