@@ -15,6 +15,7 @@
   --soft-black: #1D1C1C;
   --bittersweet: #eb5e55ff;
   --orange-web: rgba(246, 170, 28, 0.8);
+  --camel: #a97514;
 }
 
 .container-nav-bar {
@@ -587,7 +588,8 @@ footer .items-footer {
   -webkit-mask-repeat: no-repeat;
   mask-size: cover;
   -webkit-mask-size: cover;
-  margin-top: -150px;
+  margin-top: -200px;
+  z-index: 1000;
 }
 footer .items-footer .container-text-items {
   display: flex;
@@ -661,7 +663,7 @@ footer .copyrights p {
   gap: 50px;
 }
 .grid-container .image-png img {
-  width: 70%;
+  width: 80%;
   height: 50%;
   padding: 20px 10px;
 }
@@ -705,9 +707,9 @@ footer .copyrights p {
   gap: 50px;
 }
 .grid-container-right .image-png img {
-  width: 50%;
-  height: 35%;
+  width: 33rem;
   padding: 20px 10px;
+  object-fit: contain;
 }
 .grid-container-right .image-png h3 {
   color: aliceblue;
@@ -734,6 +736,111 @@ footer .copyrights p {
 
 .margin-button {
   margin-bottom: 15em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar-rums {
+  width: 100%;
+  height: 100px;
+  padding: 0 5%;
+  position: absolute;
+  z-index: 100;
+}
+.nav-bar-rums header a {
+  justify-content: center;
+}
+.nav-bar-rums ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-rums ul div {
+  align-self: flex-end;
+  background-color: black;
+  width: 2px;
+  height: 2rem;
+}
+.nav-bar-rums ul a {
+  font-size: calc(0.1vw + 2vh + 1vmin);
+}
+.nav-bar-rums ul a:hover {
+  color: var(--camel);
+}
+
+.home {
+  display: flex;
+  height: 130vh;
+  background: linear-gradient(to top, #fbedd2 30%, #dbbd86);
+  position: relative;
+  overflow: hidden;
+}
+
+.home img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.rum-image1 {
+  width: 30% !important;
+  left: 70%;
+}
+
+.rum-image2 {
+  width: 30% !important;
+}
+
+.home .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Keep Cheese";
+  text-transform: uppercase;
+  font-size: calc(3vw + 2vh + 0.5vw);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about {
+  padding: 20rem 10rem;
+  background: var(--camel);
+  color: white;
+  position: relative;
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.rums-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rums-items img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: contain;
+}
+
+.bg-color {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--orange-web);
+  border-radius: 50%;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -799,9 +906,15 @@ h2 {
 }
 
 h3 {
-  font-family: "Keep Cheese", sans-serif;
+  font-family: "", sans-serif;
   font-size: 3rem;
   color: var(--raisin-black);
+}
+
+h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3rem;
+  color: white;
 }
 
 button {
@@ -834,6 +947,12 @@ button {
 
 .grid {
   display: grid;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rem;
 }
 
 /*# sourceMappingURL=style.css.map */

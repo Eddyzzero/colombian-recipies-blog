@@ -23,6 +23,7 @@
 	--soft-black: #1D1C1C;
 	--bittersweet: #eb5e55ff;
 	--orange-web: rgba(246, 170, 28, 0.8);
+	--camel : #a97514;
 }
 
 // importation des fichiers SCSS
@@ -36,6 +37,9 @@
 
 // recipes page import 
 @import '_recipes-page.scss';
+
+// recipes page import 
+@import '_rums-page.scss';
 
 
 
@@ -96,9 +100,15 @@ h2 {
 }
 
 h3 {
-	font-family: 'Keep Cheese', sans-serif;
+	font-family: '', sans-serif;
 	font-size: 3rem;
 	color: var(--raisin-black);
+}
+
+h4 {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 3rem;
+	color: white
 }
 
 // buttons 
@@ -133,4 +143,11 @@ button {
 .grid {
 	display: grid;
 	
+}
+
+
+.wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20rem;
 }
