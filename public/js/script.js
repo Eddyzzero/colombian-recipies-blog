@@ -1,3 +1,5 @@
+
+// rums page mountain animation
 const title = document.querySelector('.title')
 const leaf1 = document.querySelector('.leaf1')
 const leaf2 = document.querySelector('.leaf2')

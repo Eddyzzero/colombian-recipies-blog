@@ -24,6 +24,10 @@
 	--bittersweet: #eb5e55ff;
 	--orange-web: rgba(246, 170, 28, 0.8);
 	--camel : #a97514;
+
+	// fonts principal
+	--jackpot : font-family: 'Jackpot';
+	--keep-cheese : font-family: 'Keep Cheese';
 }
 
 // importation des fichiers SCSS
@@ -38,8 +42,11 @@
 // recipes page import 
 @import '_recipes-page.scss';
 
-// recipes page import 
+// rums page import 
 @import '_rums-page.scss';
+
+// fruits page import 
+@import '_fruits-page.scss';
 
 
 
