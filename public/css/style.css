@@ -16,8 +16,6 @@
   --bittersweet: #eb5e55ff;
   --orange-web: rgba(246, 170, 28, 0.8);
   --camel: #a97514;
-  --jackpot: font-family: "Jackpot";
-  --keep-cheese: font-family: "Keep Cheese";
 }
 
 .container-nav-bar {
@@ -52,7 +50,7 @@ header a {
   justify-content: flex-end;
 }
 header a img {
-  width: 20rem;
+  width: 8rem;
 }
 
 nav ul {
@@ -641,10 +639,6 @@ footer .copyrights p {
   font-size: calc(0.1vw + 2vh + 1vmin);
 }
 
-header a {
-  justify-content: center;
-}
-
 .container-recipes {
   margin-top: 10rem;
 }
@@ -776,10 +770,6 @@ header a {
   color: var(--camel);
 }
 
-header a {
-  justify-content: center;
-}
-
 .home {
   display: flex;
   height: 130vh;
@@ -850,9 +840,9 @@ header a {
   border-radius: 50%;
 }
 
-.bg-body, html {
+.bg-body {
+  width: 100%;
   background: url(../../assets/images/jpg/bg-jungle.jpg) no-repeat center center/cover;
-  height: 100%;
 }
 
 .nav-bar-fruit {
@@ -881,30 +871,22 @@ header a {
   color: var(--camel);
 }
 
-.bg-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.overlay {
   width: 100%;
-  height: 100%;
   background: rgba(118, 176, 65, 0.7);
   backdrop-filter: blur(10px);
-  z-index: 1;
-  pointer-events: none;
 }
 
 .caroussel {
   position: relative;
   height: 800px;
-  margin-top: 30vh;
   overflow: hidden;
   z-index: 2;
 }
 .caroussel .list {
   position: absolute;
-  top: 0;
-  width: 1140px;
+  top: 20%;
+  width: 1540px;
   max-width: 90%;
   height: 80%;
   left: 50%;
@@ -914,17 +896,16 @@ header a {
   position: absolute;
   left: 0;
   top: 0;
-  width: 70%;
+  width: 80%;
   height: 100%;
   font-size: 1rem;
 }
 .caroussel .list .item h3 {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateY(-50%);
-  width: 400px;
+  transform: translate(-50%, -50%);
   pointer-events: none;
   font-size: 10rem;
   color: aliceblue;
@@ -936,33 +917,63 @@ header a {
   opacity: 1;
 }
 .caroussel .list .item img {
-  width: 50%;
+  width: 550px;
   position: absolute;
-  right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 .caroussel .list .item .detail {
+  padding-left: 0;
   opacity: 0;
   pointer-events: none;
+  animation: showContent 0.3s 0.4s ease-in-out 1 forwards;
+}
+@keyframes showContent {
+  from {
+    transform: translateY(50px);
+    filter: blur(30px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 .caroussel .list .item .detail .introduce {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   width: 400px;
   opacity: 1;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.caroussel .list .item .detail .introduce p {
+  color: white;
+  font-size: 1.2em;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .caroussel .list .item .detail h4 {
+  font-family: "keep cheese";
+  font-size: 2rem;
+  text-transform: uppercase;
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 35rem;
+  left: 85%;
 }
-.caroussel .list .item:nth-child(2) .detail {
+.caroussel .list .item:nth-child(3) .detail {
   opacity: 1;
   pointer-events: auto;
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
+  animation: positionItem2 0.2s ease-in-out 1 forwards;
+}
+@keyframes positionItem2 {
+  from {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.2s;
+  }
 }
 .caroussel .list .item:nth-child(n+12) {
   opacity: 0;
@@ -1045,7 +1056,7 @@ header a {
   z-index: 13;
   pointer-events: none;
 }
-.caroussel .list .item:nth-child(2) {
+.caroussel .list .item:nth-child(1) {
   transform: translate(200%, 110%);
   filter: blur(60px);
   z-index: 14;
@@ -1054,26 +1065,60 @@ header a {
 }
 
 .arrows {
+  width: 1140px;
+  max-width: 90%;
   position: absolute;
+  bottom: 10px;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translate(-50%);
-  width: 1140px;
-  max-width: 90%;
-  left: 50%;
-  bottom: 10px;
 }
 .arrows #prev,
 .arrows #next {
-  width: 50px;
-  height: 50px;
+  width: 40px;
   border-radius: 50%;
   font-family: monospace;
   border: 1px solid rgba(85, 85, 85, 0.3333333333);
   font-size: large;
   bottom: 20%;
   left: 10%;
+  font-size: 2em;
+}
+
+.item .bg-radius:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  opacity: 0.3;
+}
+
+.bg-radius {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+  opacity: 0.1;
+}
+
+.container-fruit {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateX(50%);
 }
 
 html, body, div, span, applet, object, iframe,
