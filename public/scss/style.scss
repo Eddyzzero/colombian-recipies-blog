@@ -1,3 +1,21 @@
+// importation des fichiers SCSS
+@use '_menu.scss';
+@use '_description.scss';
+@use '_rums.scss';
+@use '_fruits.scss';
+@use '_transit-line.scss';
+@use '_recipies.scss';
+@use '_footer.scss';
+
+// recipes page import 
+@use '_recipes-page.scss';
+
+// rums page import 
+@use '_rums-page.scss';
+
+// fruits page import 
+@use '_fruits-page.scss';
+
 // importation des fonts
 @font-face {
     font-family: 'Jackpot';
@@ -26,23 +44,7 @@
 	--camel : #a97514;
 }
 
-// importation des fichiers SCSS
-@import '_menu.scss';
-@import '_description.scss';
-@import '_rums.scss';
-@import '_fruits.scss';
-@import '_transit-line.scss';
-@import '_recipies.scss';
-@import '_footer.scss';
 
-// recipes page import 
-@import '_recipes-page.scss';
-
-// rums page import 
-@import '_rums-page.scss';
-
-// fruits page import 
-@import '_fruits-page.scss';
 
 
 
