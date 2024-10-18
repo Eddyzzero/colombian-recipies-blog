@@ -136,34 +136,69 @@
 
             }
             
-            &:nth-child(3) .detail {
-                opacity: 1;
-                pointer-events: auto;
-                transition: opacity 0.2s;
-                animation: positionItem2 0.2s ease-in-out 1 forwards;
-            }
-
-            @keyframes positionItem2 {
-                from {
-                    opacity: 1;
-                    pointer-events: auto;
-                    transition: opacity 0.2s;
-                } to {
-
-                }
-            }
-
-            &:nth-child( n + 12) {
+            //// debut de l'animation corrousel ////
+            &:nth-child( n + 14) {
                 opacity: 0;
                 pointer-events: none;
             }
-            &:nth-child(3) {
-                // lulo transition
+            // guanavana transition
+            &:nth-child(1) {
                 transform: translate(-100%,-5%) scale(1.5);
                 filter: blur(30px);
                 opacity: 0;
                 z-index: 2;
                 pointer-events: none;
+                animation: positionItem2 0.5s ease-in-out 1 forwards;
+            }
+
+            // animation balayage
+            @keyframes positionItem2 {
+                from {
+                    transform: translate(0,0);
+                    filter: blur(0);
+                    z-index: 16;
+                    opacity: 1;
+                    pointer-events: none;
+                }
+            }
+            //papaya transition
+            &:nth-child(2) {
+                transform: translate(0,0);
+                filter: blur(0);
+                z-index: 16;
+                opacity: 1;
+                pointer-events: none;
+                animation: positionItem3 0.7s ease-in-out 1 forwards;
+            }
+            // animation balayage
+            @keyframes positionItem3 {
+                from {
+                    transform: translate(0,0);
+                    filter: blur(60px);
+                    z-index: 14;
+                    opacity: 0;
+                    pointer-events: none;
+                }
+            }
+
+            // lulo transition
+            &:nth-child(3) {
+                transform: translate(0,0);
+                filter: blur(60px);
+                z-index: 14;
+                opacity: 0;
+                pointer-events: none;
+                animation: positionItem4 0.9s ease-in-out 1 forwards;
+            }
+            // animation balayage
+            @keyframes positionItem4 {
+                from {
+                    transform: translate(50%, 10%) scale(.8);
+                    filter: blur(10px);
+                    opacity: 1;
+                    z-index: 3;
+                    pointer-events: none;
+                }
             }
             // mamoncillo transition
             &:nth-child(4) {
@@ -172,6 +207,17 @@
                 opacity: 1;
                 z-index: 3;
                 pointer-events: none;
+                animation: positionItem5 1.1s ease-in-out 1 forwards;
+            }
+
+            @keyframes positionItem5 {
+                from {
+                    transform: translate(90%, 20%) scale(.5);
+                    filter: blur(30px);
+                    opacity: 1;
+                    z-index: 4;
+                    pointer-events: none;
+                }
             }
             // pepino melon transition
             &:nth-child(5) {
@@ -180,6 +226,18 @@
                 opacity: 1;
                 z-index: 4;
                 pointer-events: none;
+                animation: positionItem6 1.5s ease-in-out 1 forwards;
+
+            }
+
+            @keyframes positionItem6 {
+                from {
+                    transform: translate(120%, 30%) scale(.3);
+                    filter: blur(40px);
+                    opacity: 1;
+                    z-index: 5;
+                    pointer-events: none;
+                }
             }
             // banana passion transition
             &:nth-child(6) {
@@ -188,6 +246,17 @@
                 opacity: 1;
                 z-index: 5;
                 pointer-events: none;
+                animation: positionItem7 1.9s ease-in-out 1 forwards;
+            }
+
+            @keyframes positionItem7 {
+                from {
+                    transform: translate(130%, 40%) scale(.3);
+                    filter: blur(50px);
+                    opacity: 1;
+                    z-index: 7;
+                    pointer-events: none;
+                }
             }
             // freijoa transition
             &:nth-child(7) {
@@ -245,14 +314,6 @@
                 z-index: 13;
                 pointer-events: none;
             }
-            // papaya transition
-            &:nth-child(1) {
-                transform: translate(200%,110%);
-                filter: blur(60px);
-                z-index: 14;
-                opacity: 1;
-                pointer-events: none;
-            }
         }
     }
 }
@@ -273,6 +334,7 @@
     #prev,
     #next {
         width: 40px;
+        height: 40px;
         border-radius: 50%;
         font-family: monospace;
         border: 1px solid #5555;

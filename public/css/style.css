@@ -944,29 +944,60 @@ footer .copyrights p {
   top: 35rem;
   left: 85%;
 }
-.caroussel .list .item:nth-child(3) .detail {
-  opacity: 1;
-  pointer-events: auto;
-  transition: opacity 0.2s;
-  animation: positionItem2 0.2s ease-in-out 1 forwards;
-}
-@keyframes positionItem2 {
-  from {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.2s;
-  }
-}
-.caroussel .list .item:nth-child(n+12) {
+.caroussel .list .item:nth-child(n+14) {
   opacity: 0;
   pointer-events: none;
 }
-.caroussel .list .item:nth-child(3) {
+.caroussel .list .item:nth-child(1) {
   transform: translate(-100%, -5%) scale(1.5);
   filter: blur(30px);
   opacity: 0;
   z-index: 2;
   pointer-events: none;
+  animation: positionItem2 0.5s ease-in-out 1 forwards;
+}
+@keyframes positionItem2 {
+  from {
+    transform: translate(0, 0);
+    filter: blur(0);
+    z-index: 16;
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+.caroussel .list .item:nth-child(2) {
+  transform: translate(0, 0);
+  filter: blur(0);
+  z-index: 16;
+  opacity: 1;
+  pointer-events: none;
+  animation: positionItem3 0.7s ease-in-out 1 forwards;
+}
+@keyframes positionItem3 {
+  from {
+    transform: translate(0, 0);
+    filter: blur(60px);
+    z-index: 14;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.caroussel .list .item:nth-child(3) {
+  transform: translate(0, 0);
+  filter: blur(60px);
+  z-index: 14;
+  opacity: 0;
+  pointer-events: none;
+  animation: positionItem4 0.9s ease-in-out 1 forwards;
+}
+@keyframes positionItem4 {
+  from {
+    transform: translate(50%, 10%) scale(0.8);
+    filter: blur(10px);
+    opacity: 1;
+    z-index: 3;
+    pointer-events: none;
+  }
 }
 .caroussel .list .item:nth-child(4) {
   transform: translate(50%, 10%) scale(0.8);
@@ -974,6 +1005,16 @@ footer .copyrights p {
   opacity: 1;
   z-index: 3;
   pointer-events: none;
+  animation: positionItem5 1.1s ease-in-out 1 forwards;
+}
+@keyframes positionItem5 {
+  from {
+    transform: translate(90%, 20%) scale(0.5);
+    filter: blur(30px);
+    opacity: 1;
+    z-index: 4;
+    pointer-events: none;
+  }
 }
 .caroussel .list .item:nth-child(5) {
   transform: translate(90%, 20%) scale(0.5);
@@ -981,6 +1022,16 @@ footer .copyrights p {
   opacity: 1;
   z-index: 4;
   pointer-events: none;
+  animation: positionItem6 1.5s ease-in-out 1 forwards;
+}
+@keyframes positionItem6 {
+  from {
+    transform: translate(120%, 30%) scale(0.3);
+    filter: blur(40px);
+    opacity: 1;
+    z-index: 5;
+    pointer-events: none;
+  }
 }
 .caroussel .list .item:nth-child(6) {
   transform: translate(120%, 30%) scale(0.3);
@@ -988,6 +1039,16 @@ footer .copyrights p {
   opacity: 1;
   z-index: 5;
   pointer-events: none;
+  animation: positionItem7 1.9s ease-in-out 1 forwards;
+}
+@keyframes positionItem7 {
+  from {
+    transform: translate(130%, 40%) scale(0.3);
+    filter: blur(50px);
+    opacity: 1;
+    z-index: 7;
+    pointer-events: none;
+  }
 }
 .caroussel .list .item:nth-child(7) {
   transform: translate(130%, 40%) scale(0.3);
@@ -1038,13 +1099,6 @@ footer .copyrights p {
   z-index: 13;
   pointer-events: none;
 }
-.caroussel .list .item:nth-child(1) {
-  transform: translate(200%, 110%);
-  filter: blur(60px);
-  z-index: 14;
-  opacity: 1;
-  pointer-events: none;
-}
 
 .arrows {
   width: 100%;
@@ -1061,6 +1115,7 @@ footer .copyrights p {
 .arrows #prev,
 .arrows #next {
   width: 40px;
+  height: 40px;
   border-radius: 50%;
   font-family: monospace;
   border: 1px solid rgba(85, 85, 85, 0.3333333333);

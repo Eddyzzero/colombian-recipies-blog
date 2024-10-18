@@ -30,7 +30,7 @@ document.addEventListener('scroll', function() {
 let nextButton = document.getElementById('next');
 let prevButton = document.getElementById('prev');
 let caroussel = document.querySelector('.caroussel');
-let listHtml = document.querySelector('.caroussel  .list    ' );
+let listHtml = document.querySelector('.caroussel .list' );
 
 // function pour les bouttons previous et next button
 
@@ -48,5 +48,9 @@ const showSlider = (type) => {
     if(type === 'next') {
         listHtml.appendChild(items[0]);
         caroussel.classList.add('next');
+    } else {
+        let positionLast = items.length -1;
+        listHtml.prepend(items[positionLast]);
+        caroussel.classList.add('prev');
     }
 }
