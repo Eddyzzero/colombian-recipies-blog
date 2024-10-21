@@ -17,17 +17,12 @@
 @use '_fruits-page.scss';
 
 // importation des fonts
-@font-face {
-    font-family: 'Jackpot';
-    src: url(../../assets/fonts/Jackpot.ttf) format('ttf');
-}
-
-@font-face {
-    font-family: 'Keep Cheese';
-    src: url(../../assets/fonts/Keep\ Cheese.ttf) format('ttf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// titres
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+// subtitres
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+// texte général
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
 	
@@ -98,22 +93,30 @@ table {
 	border-spacing: 0;
 }
 
+h1 {
+	font-family: 'Caveat' , sans-serif;
+}
+
 h2 {
-	font-family: 'jackpot', sans-serif;
-	font-size: 4rem;
+	font-family: 'caveat', sans-serif;
+	font-size: 6rem;
 	color: var(--raisin-black);
 }
 
 h3 {
-	font-family: '', sans-serif;
+	font-family: 'caveat', sans-serif;
 	font-size: 3rem;
 	color: var(--raisin-black);
 }
 
 h4 {
-	font-family: 'Barlow Condensed', sans-serif;
+	font-family: 'Bentham', sans-serif;
 	font-size: 3rem;
 	color: white
+}
+
+p {
+	font-family: "Mukta Vaani" , sans-serif;
 }
 
 // buttons 

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap");
 .container-nav-bar {
   background-color: var(--orange-web);
   width: 100%;
@@ -31,7 +33,7 @@ header a {
   justify-content: center;
 }
 header a img {
-  width: 20rem;
+  width: 15rem;
 }
 
 nav ul {
@@ -39,8 +41,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 90px;
-  font-size: 7rem;
-  font-family: "Jackpot", sans-serif;
+  font-family: "Caveat", sans-serif;
 }
 nav ul a {
   text-decoration: none;
@@ -780,9 +781,9 @@ footer .copyrights p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Keep Cheese";
+  font-family: "Caveat";
   text-transform: uppercase;
-  font-size: calc(3vw + 2vh + 0.5vw);
+  font-size: calc(2vw + 3vh + 0.5vw);
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -861,7 +862,7 @@ footer .copyrights p {
 
 .caroussel {
   position: relative;
-  height: 50%;
+  height: 70%;
   overflow: hidden;
   z-index: 2;
 }
@@ -891,7 +892,7 @@ footer .copyrights p {
   pointer-events: none;
   font-size: 10rem;
   color: aliceblue;
-  font-family: "keep cheese";
+  font-family: "Bentham";
   text-transform: uppercase;
   z-index: -1;
 }
@@ -932,9 +933,8 @@ footer .copyrights p {
   gap: 2vh;
 }
 .caroussel .list .item .detail .introduce p {
-  color: white;
   font-size: 1.2em;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Mukta Vaani", sans-serif;
 }
 .caroussel .list .item .detail h4 {
   font-family: "keep cheese";
@@ -1158,14 +1158,6 @@ footer .copyrights p {
   transform: translateX(50%);
 }
 
-@font-face {
-  font-family: "Jackpot";
-  src: url(../../assets/fonts/Jackpot.ttf) format("ttf");
-}
-@font-face {
-  font-family: "Keep Cheese";
-  src: url(../../assets/fonts/Keep\ Cheese.ttf) format("ttf");
-}
 :root {
   --context: 14.4;
   --verdigris: #17bebbff;
@@ -1233,22 +1225,30 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-family: "Caveat", sans-serif;
+}
+
 h2 {
-  font-family: "jackpot", sans-serif;
-  font-size: 4rem;
+  font-family: "caveat", sans-serif;
+  font-size: 6rem;
   color: var(--raisin-black);
 }
 
 h3 {
-  font-family: "", sans-serif;
+  font-family: "caveat", sans-serif;
   font-size: 3rem;
   color: var(--raisin-black);
 }
 
 h4 {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bentham", sans-serif;
   font-size: 3rem;
   color: white;
+}
+
+p {
+  font-family: "Mukta Vaani", sans-serif;
 }
 
 button {
