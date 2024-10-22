@@ -42,7 +42,6 @@
 .caroussel {
     position: relative;
     height: 50%;
-    overflow: hidden;
     z-index: 2;
 
     .list {
@@ -118,7 +117,6 @@
                     gap: 2vh;
 
                     p {
-                        color: white;
                         font-size: 1.2em;
                     	font-family: 'Mukta Vaani', sans-serif;
                         
@@ -322,7 +320,7 @@
     width: 100%;
     max-width: 20%;
     position: absolute;
-    bottom: 0;
+    bottom: -30%;
     left: 50%;
     align-items: center;
     transform: translateX(-50%);
@@ -333,8 +331,11 @@
 
     #prev,
     #next {
-        width: 40px;
-        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 40px;
         border-radius: 50%;
         font-family: monospace;
         border: 1px solid #5555;
@@ -342,6 +343,8 @@
         bottom: 20%;
         left: 10%;
         font-size: 2em;
+        text-align: center;
+        justify-content: center;
     }
 
 }

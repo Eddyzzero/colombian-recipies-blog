@@ -41,6 +41,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 90px;
+  font-size: calc(8rem + 1vw + 0.5rem);
   font-family: "Caveat", sans-serif;
 }
 nav ul a {
@@ -70,7 +71,7 @@ nav ul a:hover {
 .comida-calle-child h2 {
   position: relative;
   width: 110vw;
-  font-size: 6rem;
+  font-size: 15rem;
   z-index: 3;
 }
 .comida-calle-child .ombre-text {
@@ -81,7 +82,7 @@ nav ul a:hover {
   z-index: 2;
 }
 .comida-calle-child p {
-  font-size: 3rem;
+  font-size: calc(1rem + 2vw + 0.5rem);
   font-family: "Barlow Condensed", sans-serif;
   width: 40vw;
 }
@@ -143,7 +144,6 @@ nav ul a:hover {
 .item1 p {
   margin-top: 2rem;
   text-align: center;
-  font-family: "Keep Cheese";
   font-size: 1.5rem;
 }
 .item1 button {
@@ -233,7 +233,6 @@ nav ul a:hover {
 .fruits-container p {
   margin-top: 2rem;
   text-align: center;
-  font-family: "Keep Cheese";
   font-size: 1.5rem;
 }
 
@@ -475,7 +474,6 @@ nav ul a:hover {
 }
 .recipies-container .recipes-text p {
   width: 40rem;
-  font-family: "Keep Cheese";
   font-size: 2rem;
 }
 .recipies-container .recipes-text button {
@@ -484,7 +482,7 @@ nav ul a:hover {
 .recipies-container .text-bas {
   width: 40rem;
   align-self: flex-end;
-  font-family: "Keep Cheese";
+  font-family: "Mukta Vaani";
   font-size: 2rem;
 }
 
@@ -627,7 +625,7 @@ footer .copyrights p {
 .container-recipes h2 {
   text-align: center;
   text-transform: uppercase;
-  margin: 4em 0;
+  margin: 2em 0;
 }
 
 .grid-container {
@@ -669,7 +667,6 @@ footer .copyrights p {
 .grid-container .text-container p {
   font-size: clamp(1rem, 2.5vw, 2rem);
   text-align: center;
-  font-family: "Keep Cheese";
 }
 
 .grid-container-right {
@@ -713,7 +710,6 @@ footer .copyrights p {
 .grid-container-right .text-container p {
   font-size: clamp(1rem, 2.5vw, 2rem);
   text-align: center;
-  font-family: "Keep Cheese";
 }
 
 .margin-button {
@@ -862,8 +858,7 @@ footer .copyrights p {
 
 .caroussel {
   position: relative;
-  height: 70%;
-  overflow: hidden;
+  height: 50%;
   z-index: 2;
 }
 .caroussel .list {
@@ -1104,7 +1099,7 @@ footer .copyrights p {
   width: 100%;
   max-width: 20%;
   position: absolute;
-  bottom: 0;
+  bottom: -30%;
   left: 50%;
   align-items: center;
   transform: translateX(-50%);
@@ -1114,8 +1109,11 @@ footer .copyrights p {
 }
 .arrows #prev,
 .arrows #next {
-  width: 40px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 40px;
   border-radius: 50%;
   font-family: monospace;
   border: 1px solid rgba(85, 85, 85, 0.3333333333);
@@ -1123,6 +1121,8 @@ footer .copyrights p {
   bottom: 20%;
   left: 10%;
   font-size: 2em;
+  text-align: center;
+  justify-content: center;
 }
 
 .item .bg-radius:nth-child(3) {
@@ -1204,6 +1204,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ol, ul {
