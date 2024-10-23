@@ -33,15 +33,15 @@ header a {
   justify-content: center;
 }
 header a img {
-  width: 15rem;
+  width: 10rem;
 }
 
 nav ul {
-  margin-left: 90px;
+  margin-top: 1vw;
   display: flex;
   flex-direction: column;
   gap: 90px;
-  font-size: calc(8rem + 1vw + 0.5rem);
+  font-size: calc(5rem + 1vw + 0.5rem);
   font-family: "Caveat", sans-serif;
 }
 nav ul a {
@@ -53,8 +53,13 @@ nav ul a:hover {
   color: var(--kelly-green);
 }
 
+.nav-bar-index {
+  margin-left: 10rem;
+}
+
 .comida-calle-container {
   width: 100%;
+  margin: 0 auto;
   display: flex;
   background-color: var(--bittersweet);
   padding: 17vw 6vw;
@@ -84,12 +89,11 @@ nav ul a:hover {
 .comida-calle-child p {
   font-size: calc(1rem + 2vw + 0.5rem);
   font-family: "Barlow Condensed", sans-serif;
-  width: 40vw;
+  width: 50vw;
 }
 .comida-calle-child img {
   object-fit: cover;
   width: 40vw;
-  height: 40vh;
   border-radius: 20px;
 }
 
@@ -145,9 +149,6 @@ nav ul a:hover {
   margin-top: 2rem;
   text-align: center;
   font-size: 1.5rem;
-}
-.item1 button {
-  margin-top: 2rem;
 }
 
 .item2 {
@@ -205,13 +206,15 @@ nav ul a:hover {
 @media (min-aspect-ratio: 16/9) {
   .background-rum-item {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 @media (max-aspect-ratio: 16/9) {
   .background-rum-item {
-    width: auto;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 .fruits-container {
@@ -481,6 +484,7 @@ nav ul a:hover {
 }
 .recipies-container .text-bas {
   width: 40rem;
+  margin: 90px 0 90px 0;
   align-self: flex-end;
   font-family: "Mukta Vaani";
   font-size: 2rem;
@@ -611,7 +615,7 @@ footer .copyrights p {
 }
 .nav-bar-recipes ul div {
   align-self: flex-end;
-  background-color: black;
+  background-color: var(--raisin-black);
   width: 2px;
   height: 2rem;
 }
@@ -620,12 +624,14 @@ footer .copyrights p {
 }
 
 .container-recipes {
-  margin-top: 10rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .container-recipes h2 {
   text-align: center;
   text-transform: uppercase;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .grid-container {
@@ -673,7 +679,6 @@ footer .copyrights p {
   display: grid;
   grid-template-columns: repeat(2, 40em);
   grid-template-rows: repeat(2, 40em);
-  justify-content: right;
   gap: 2rem;
   padding: 2rem 20rem 0 6rem;
   margin-left: auto;
@@ -819,9 +824,10 @@ footer .copyrights p {
 }
 
 .bg-body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url(../../assets/images/jpg/bg-jungle.jpg) no-repeat center center/cover;
+  overflow: hidden;
 }
 
 .nav-bar-fruit {
@@ -850,22 +856,22 @@ footer .copyrights p {
 }
 
 .overlay {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: rgba(118, 176, 65, 0.7);
   backdrop-filter: blur(10px);
 }
 
 .caroussel {
-  position: relative;
   height: 50%;
   z-index: 2;
 }
 .caroussel .list {
   position: absolute;
-  top: 20%;
-  width: 1540px;
-  max-width: 90%;
+  top: 30%;
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
   height: 80%;
   left: 50%;
   transform: translatex(-50%);
@@ -885,7 +891,7 @@ footer .copyrights p {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  font-size: 10rem;
+  font-size: 5rem;
   color: aliceblue;
   font-family: "Bentham";
   text-transform: uppercase;
@@ -895,7 +901,7 @@ footer .copyrights p {
   opacity: 1;
 }
 .caroussel .list .item img {
-  width: 550px;
+  width: 20vw;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -904,7 +910,7 @@ footer .copyrights p {
   padding-left: 0;
   opacity: 0;
   pointer-events: none;
-  animation: showContent 0.3s 0.4s ease-in-out 1 forwards;
+  animation: showContent 0.5s 0.8s ease-in-out 1 forwards;
 }
 @keyframes showContent {
   from {
@@ -920,19 +926,19 @@ footer .copyrights p {
 .caroussel .list .item .detail .introduce {
   position: absolute;
   transform: translateY(50%);
-  width: 400px;
+  width: 40vw;
   opacity: 1;
   pointer-events: none;
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-.caroussel .list .item .detail .introduce p {
-  font-size: 1.2em;
+.caroussel .list .item .detail .introduce p:nth-child(1) {
+  font-size: 1.3em;
   font-family: "Mukta Vaani", sans-serif;
 }
 .caroussel .list .item .detail h4 {
-  font-family: "keep cheese";
+  font-family: "Bentham";
   font-size: 2rem;
   text-transform: uppercase;
   position: absolute;
@@ -947,7 +953,7 @@ footer .copyrights p {
   transform: translate(-100%, -5%) scale(1.5);
   filter: blur(30px);
   opacity: 0;
-  z-index: 2;
+  z-index: 11;
   pointer-events: none;
   animation: positionItem2 0.5s ease-in-out 1 forwards;
 }
@@ -955,7 +961,7 @@ footer .copyrights p {
   from {
     transform: translate(0, 0);
     filter: blur(0);
-    z-index: 16;
+    z-index: 10;
     opacity: 1;
     pointer-events: none;
   }
@@ -963,24 +969,24 @@ footer .copyrights p {
 .caroussel .list .item:nth-child(2) {
   transform: translate(0, 0);
   filter: blur(0);
-  z-index: 16;
+  z-index: 10;
   opacity: 1;
   pointer-events: none;
   animation: positionItem3 0.7s ease-in-out 1 forwards;
 }
 @keyframes positionItem3 {
   from {
-    transform: translate(0, 0);
+    transform: translate(50%, 10%) scale(0.8);
     filter: blur(60px);
-    z-index: 14;
+    z-index: 12;
     opacity: 0;
     pointer-events: none;
   }
 }
 .caroussel .list .item:nth-child(3) {
-  transform: translate(0, 0);
+  transform: translate(50%, 10%) scale(0.8);
   filter: blur(60px);
-  z-index: 14;
+  z-index: 12;
   opacity: 0;
   pointer-events: none;
   animation: positionItem4 0.9s ease-in-out 1 forwards;
@@ -1097,10 +1103,10 @@ footer .copyrights p {
 
 .arrows {
   width: 100%;
-  max-width: 20%;
+  max-width: 80%;
   position: absolute;
-  bottom: -30%;
   left: 50%;
+  bottom: 3%;
   align-items: center;
   transform: translateX(-50%);
   display: flex;
@@ -1252,6 +1258,12 @@ p {
   font-family: "Mukta Vaani", sans-serif;
 }
 
+span {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
 button {
   text-decoration: none;
   background-color: var(--verdigris);
@@ -1260,7 +1272,8 @@ button {
   border: none;
   padding: 10px 30px;
   cursor: pointer;
-  font-family: "Keep Cheese";
+  font-family: "Bentham";
+  margin-top: 2rem;
 }
 
 .flex-row {

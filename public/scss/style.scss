@@ -120,6 +120,12 @@ p {
 	font-family: "Mukta Vaani" , sans-serif;
 }
 
+span {
+	font-size: 1.5rem;
+	color: white;
+	text-transform: uppercase;
+}
+
 // buttons 
 button {
 	text-decoration: none;
@@ -129,7 +135,8 @@ button {
 	border: none;
 	padding: 10px 30px;
 	cursor: pointer;
-    font-family: 'Keep Cheese';
+    font-family: 'Bentham';
+	margin-top: 2rem;
 }
 
 .flex-row {

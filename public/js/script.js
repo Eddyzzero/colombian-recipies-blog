@@ -46,7 +46,7 @@ const showSlider = (type) => {
 
     // creation d'un loop, une fois que l'utilisateur appuis sur le bouton ça envoie la class derrier
     if(type === 'next') {
-        listHtml.appendChild(items[0]);
+        listHtml.appendChild(items[1]);
         caroussel.classList.add('next');
     } else {
         let positionLast = items.length -1;
@@ -54,3 +54,5 @@ const showSlider = (type) => {
         caroussel.classList.add('prev');
     }
 }
+
+

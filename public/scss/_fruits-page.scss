@@ -1,7 +1,8 @@
 .bg-body{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background:  url(../../assets/images/jpg/bg-jungle.jpg) no-repeat center center/cover;
+    overflow: hidden;
 }
 
 .nav-bar-fruit {
@@ -33,22 +34,22 @@
 }
 
 .overlay {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: rgba(118, 176, 65, 0.7);
     backdrop-filter: blur(10px);
 }
 
 .caroussel {
-    position: relative;
     height: 50%;
     z-index: 2;
 
     .list {
         position: absolute;
-        top: 20%;
-        width: 1540px;
-        max-width: 90%;
+        top: 30%;
+        width: 80%;
+        max-width:1500px;
+        margin: 0 auto;
         height: 80%;
         left: 50%;
         transform: translatex(-50%);
@@ -69,7 +70,7 @@
                 transform: translate(-50%, -50%);
                 pointer-events: none;
 
-                font-size: 10rem;
+                font-size: 5rem;
                 color: aliceblue;
                 font-family: 'Bentham';
                 text-transform: uppercase;
@@ -81,7 +82,7 @@
             }
 
             img {
-                width: 550px;
+                width: 20vw;
                 position: absolute;
                 top: 50%;
                 transform: translate(-50%, -50%);
@@ -91,7 +92,7 @@
                 padding-left: 0 ;
                 opacity: 0;
                 pointer-events: none;
-                animation: showContent 0.3s 0.4s ease-in-out 1 forwards;
+                animation: showContent 0.5s 0.8s ease-in-out 1 forwards;
 
                 // text animation creation
                 @keyframes showContent {
@@ -108,7 +109,7 @@
                 .introduce {
                     position: absolute;
                     transform: translateY(50%);
-                    width: 400px;
+                    width: 40vw;
                     opacity: 1;
                     pointer-events: none;
                     
@@ -116,15 +117,14 @@
                     flex-direction: column;
                     gap: 2vh;
 
-                    p {
-                        font-size: 1.2em;
+                    & p:nth-child(1)   {
+                        font-size: 1.3em;
                     	font-family: 'Mukta Vaani', sans-serif;
-                        
                     }
                 }
 
                 h4 {
-                    font-family: 'keep cheese';
+                    font-family: "Bentham";
                     font-size: 2rem;
                     text-transform: uppercase;
                     position: absolute;
@@ -144,7 +144,7 @@
                 transform: translate(-100%,-5%) scale(1.5);
                 filter: blur(30px);
                 opacity: 0;
-                z-index: 2;
+                z-index: 11;
                 pointer-events: none;
                 animation: positionItem2 0.5s ease-in-out 1 forwards;
             }
@@ -154,7 +154,7 @@
                 from {
                     transform: translate(0,0);
                     filter: blur(0);
-                    z-index: 16;
+                    z-index: 10;
                     opacity: 1;
                     pointer-events: none;
                 }
@@ -163,7 +163,7 @@
             &:nth-child(2) {
                 transform: translate(0,0);
                 filter: blur(0);
-                z-index: 16;
+                z-index: 10;
                 opacity: 1;
                 pointer-events: none;
                 animation: positionItem3 0.7s ease-in-out 1 forwards;
@@ -171,9 +171,9 @@
             // animation balayage
             @keyframes positionItem3 {
                 from {
-                    transform: translate(0,0);
+                transform: translate(50%,10%) scale(0.8);
                     filter: blur(60px);
-                    z-index: 14;
+                    z-index: 12;
                     opacity: 0;
                     pointer-events: none;
                 }
@@ -181,9 +181,9 @@
 
             // lulo transition
             &:nth-child(3) {
-                transform: translate(0,0);
+                transform: translate(50%,10%) scale(0.8);
                 filter: blur(60px);
-                z-index: 14;
+                z-index: 12;
                 opacity: 0;
                 pointer-events: none;
                 animation: positionItem4 0.9s ease-in-out 1 forwards;
@@ -318,10 +318,10 @@
 
 .arrows {
     width: 100%;
-    max-width: 20%;
+    max-width: 80%;
     position: absolute;
-    bottom: -30%;
     left: 50%;
+    bottom: 3%;
     align-items: center;
     transform: translateX(-50%);
 

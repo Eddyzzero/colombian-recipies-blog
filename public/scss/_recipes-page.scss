@@ -12,7 +12,7 @@
 
         div {
             align-self: flex-end;
-            background-color: black;
+            background-color: var(--raisin-black);
             width: 2px;
             height: 2rem;
         }
@@ -25,12 +25,14 @@
 
 
 .container-recipes {
-    margin-top: 10rem;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 
     h2 {
         text-align: center;
         text-transform: uppercase;
-        margin: 2em 0;
+        margin: 1em 0;
     }
 }
 
@@ -89,7 +91,6 @@
     display: grid;
     grid-template-columns: repeat(2, 40em);
     grid-template-rows: repeat(2, 40em);
-    justify-content: right;
     gap: 2rem;
     padding: 2rem 20rem 0 6rem;
     margin-left: auto;
