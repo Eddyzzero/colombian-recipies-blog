@@ -1,6 +1,6 @@
 
 // rums page mountain animation
-const title = document.querySelector('.title');
+const title = document.querySelector('.title-rums');
 const leaf1 = document.querySelector('.leaf1');
 const leaf2 = document.querySelector('.leaf2');
 const bush2 = document.querySelector('.bush2');
@@ -27,26 +27,31 @@ document.addEventListener('scroll', function() {
 
     
 // appelle des composants pour l'animation de la section fruits
-let nextButton = document.getElementById('next');
-let prevButton = document.getElementById('prev');
-let caroussel = document.querySelector('.caroussel');
-let listHtml = document.querySelector('.caroussel .list' );
+
 
 // function pour les bouttons previous et next button
 
-nextButton.onclick = function() {
-    showSlider('next');
-}
-prevButton.onclick = function() {
-    showSlider('prev');
-}
+let caroussel = document.querySelector('.caroussel');
+let listHtml = document.querySelector('.caroussel .list' );
+let prevButton = document.getElementById('prev');
+let nextButton = document.getElementById('next');
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    nextButton.onclick = function() {
+        showSlider('next');
+    }
+    prevButton.onclick = function() {
+        showSlider('prev');
+    }
+})
 
 const showSlider = (type) => {
     let items = document.querySelectorAll('.caroussel .list .item')
 
     // creation d'un loop, une fois que l'utilisateur appuis sur le bouton ça envoie la class derrier
     if(type === 'next') {
-        listHtml.appendChild(items[1]);
+        listHtml.appendChild(items[0]);
         caroussel.classList.add('next');
     } else {
         let positionLast = items.length -1;
@@ -56,3 +61,25 @@ const showSlider = (type) => {
 }
 
 
+// animation scroll reveal 
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal') 
+
+        // creation de la boucle for pour l'animation
+        for(var i = 0; i < reveals.length; i++) {
+
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150; 
+
+            if(revealTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+
+
+}

@@ -70,7 +70,7 @@
                 transform: translate(-50%, -50%);
                 pointer-events: none;
 
-                font-size: 5rem;
+                font-size: 10rem;
                 color: aliceblue;
                 font-family: 'Bentham';
                 text-transform: uppercase;
@@ -128,7 +128,7 @@
                     font-size: 2rem;
                     text-transform: uppercase;
                     position: absolute;
-                    top: 35rem;
+                    top: 45rem;
                     left: 85%;
                 }
 
@@ -384,4 +384,8 @@
     top: 50%;
     left: 90%;
     transform: translateX(50%);
+}
+
+.footer-fruit-page{
+    margin-top: 10em;
 }

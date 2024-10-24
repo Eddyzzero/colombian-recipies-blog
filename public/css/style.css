@@ -777,7 +777,7 @@ footer .copyrights p {
   width: 30% !important;
 }
 
-.home .title {
+.home .title-rums {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -891,7 +891,7 @@ footer .copyrights p {
   left: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  font-size: 5rem;
+  font-size: 10rem;
   color: aliceblue;
   font-family: "Bentham";
   text-transform: uppercase;
@@ -942,7 +942,7 @@ footer .copyrights p {
   font-size: 2rem;
   text-transform: uppercase;
   position: absolute;
-  top: 35rem;
+  top: 45rem;
   left: 85%;
 }
 .caroussel .list .item:nth-child(n+14) {
@@ -1164,6 +1164,10 @@ footer .copyrights p {
   transform: translateX(50%);
 }
 
+.footer-fruit-page {
+  margin-top: 10em;
+}
+
 :root {
   --context: 14.4;
   --verdigris: #17bebbff;
@@ -1301,6 +1305,18 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 20rem;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
