@@ -16,6 +16,9 @@
 // fruits page import 
 @use '_fruits-page.scss';
 
+// creation de responsive design
+@use '_responsive.scss';
+
 // importation des fonts
 // titres
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
@@ -99,6 +102,7 @@ h1 {
 }
 
 h2 {
+	text-transform: uppercase;
 	font-family: 'caveat', sans-serif;
 	font-size: 6rem;
 	color: var(--raisin-black);

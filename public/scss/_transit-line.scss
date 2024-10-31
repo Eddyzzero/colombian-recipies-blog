@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     column-gap: 5rem;
-    background-color: var(--orange-web);
 
 
     img {
@@ -15,5 +14,45 @@
         font-family: 'Keep Cheese', sans-serif;
         font-size: 2rem;
         color: var(--raisin-black);
+    }
+}
+
+.scroller {
+    max-width: 100%;
+
+    .scroller__inner {
+        padding-block: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+.scroller[data-animated = "true"] {
+    overflow: hidden;
+    
+    -webkit-mask: linear-gradient(
+    90deg, 
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+    );
+    mask: linear-gradient(90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+    );
+}
+.scroller[data-animated = "true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-100%);
     }
 }
